@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Lobster&family=Marck+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(imagens/background-1.jpg);
+    background-size: 200% 200%;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.imagem-profile {
+    width: 140px;
+    height: 140px;
+    border-radius: 100px;
+    
+}
+
+.cabecalho-titulo {
+    font-family: 'Hammersmith One';
+    color:  #ffffff;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    
+}
+
+.paragrafo {
+    font-family: 'marck spript', sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    animation: blink-cursor 500ms steps(40) infinite normal, typing 4s steps(40) 1s normal both;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #ffffff;
+}
+
+.conteudo {
+    width: 500px;
+    padding: 45px;
+    gap: 25px ;
+    background-image: linear-gradient(to bottom right, #417acb 0%, #4071bb 40%, #321071 60%,#1e103e 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow:8PX 15px rgba(74, 103, 139, 0.4);
+}
+
+
+.navegacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+
+}
+
+
+.link-name {
+    font-family: 'Hammersmith One';
+    font-size: 2rem;
+    background-color: #63a0e3;
+    padding: 15px , 0;
+    text-decoration: none;
+    color: #ffffff;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 10px 10px 3px #ff80008d;
+    transition: all .5s ease-in-out;
+}
+
+.link-name:hover {
+    opacity: 45%;
+}
+
+.footer{
+    border-top: 1px solid #63a0e3;
+}
+
+.footer-text {
+    font-family: sans-serif;
+    color: #ffffff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.footer-imagens {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    
+    
+}
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+       width: 20em;
+    }
+}
+
+ @keyframes blink-cursor {
+    50% {
+        border-color: transparent;
+    }
+ }
+
+ 
